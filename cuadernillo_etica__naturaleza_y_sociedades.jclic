@@ -1,0 +1,816 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<JClicProject name="cuadernillo_etica__naturaleza_y_sociedades" version="0.1.3">
+ <settings>
+  <title>cuadernillo etica, naturaleza y sociedades</title>
+  <revision description="created" date="10/5/26" />
+  <author name="Jaqueline B" />
+  <author name="Arisbeth F" />
+  <organization name="UNISON CABORCA" />
+  <description>
+   <p>FASE 6 ÉTICA NATURALEZA Y SOCIEDADES</p>
+  </description>
+  <descriptors area-codes="soc" level-codes="SEC" />
+  <meta_langs>es</meta_langs>
+  <descriptions>
+   <description language="es">
+    <p>FASE 6 ÉTICA NATURALEZA Y SOCIEDADES</p>
+   </description>
+  </descriptions>
+  <license type="by-nc-sa" url="https://creativecommons.org/licenses/by-nc-sa/4.0" />
+ </settings>
+ <sequence>
+  <item id="start" name="PORTADA" />
+  <item name="TIPOS DE INCLUSION" />
+  <item name="IMAGEN CON IMAGEN" />
+  <item name="ROMPECABEZA" />
+  <item name="crucigrama" />
+  <item name="SOPA DE LETRAS" />
+  <item name="TEXTO 1" />
+  <item name="TEXTO 2" />
+  <item name="TEXTO 3" />
+  <item name="TEXTO 4" />
+  <item name="TEXTO 5" />
+ </sequence>
+ <activities>
+  <activity class="@associations.SimpleAssociation" name="IMAGEN CON IMAGEN" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial Black" size="17" />
+      <color background="0xFFFFCC" inactive="0xCCCCFF" border="0xCCCCFF" />
+     </style>
+     <p>RELACIONA LA CAUSA CON LA CONSECUENCIA</p>
+    </cell>
+    <cell border="false" type="final">
+     <style borderStroke="0.0" markerStroke="5.0">
+      <font family="Arial Black" size="17" />
+      <color background="0xCCFFCC" inactive="0xFFCCCC" border="0xFFCCCC" />
+     </style>
+     <p>¡BIEN HECHO!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xCCCCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFCCCC" border="true" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell image="cau 1.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="cau 2.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="cau 3.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="cau 4.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="4" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell image="conse 1.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="conse 2.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="conse 3.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="conse 4.jpg">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@panels.InformationScreen" name="PORTADA" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <color background="0xCCCCFF" />
+     </style>
+     <p>BIENVENIDOS A ESTE REPASO DISFRUTA LOS JUEGOS</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color background="0xFFCCCC" />
+     </style>
+     <p>!EXCELENTE¡</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="false">
+    <container bgColor="0xFF99FF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCFFCC" border="true" />
+   </settings>
+   <cells rows="1" cols="1" border="true" image="JUEGOS-resized.jpg">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="1" />
+   </cells>
+  </activity>
+  <activity class="@puzzles.ExchangePuzzle" name="ROMPECABEZA" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0xFFCC00" border="0xCC33FF" />
+     </style>
+     <p>INTENTA ARMAR EL ROMPECABEZA</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color background="0xFFFFCC" />
+     </style>
+     <p>¡LO LOGRASTE!</p>
+    </cell>
+   </messages>
+   <settings margin="8" dragCells="true" report="true" reportActions="false">
+    <container bgColor="0xFF0033">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCFFFF" border="true" />
+   </settings>
+   <cells rows="4" cols="4" border="true" image="ROOMPECABEZAAA-resized.jpg">
+    <style />
+    <shaper class="@ClassicJigSaw" cols="4" rows="4" />
+   </cells>
+   <scramble times="31" />
+  </activity>
+  <activity class="@textGrid.WordSearch" name="SOPA DE LETRAS" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Arial" size="18" />
+      <color background="0xFFFF99" />
+     </style>
+     <p>ENCUENTRA LAS PALABRAS CORRESPONDIENTES</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial" size="18" />
+      <color background="0xFFCCCC" />
+     </style>
+     <p>¡BIEN HECHO!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xCCCCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF99" border="true" />
+   </settings>
+   <textGrid rows="15" columns="15" cellWidth="20.0" cellHeight="20.0" border="true">
+    <style>
+     <color background="0xFFFFFF" />
+    </style>
+    <text>
+     <row>COMUNIDAD******</row>
+     <row>*****N**E******</row>
+     <row>*****C**R**C***</row>
+     <row>**F**L**E**O***</row>
+     <row>***A*U**C**N***</row>
+     <row>****MS**H**V**C</row>
+     <row>J****I**O**I**U</row>
+     <row>U****OL*S**V**L</row>
+     <row>S**R*N*I***E**T</row>
+     <row>T**EQUIDAD*N**U</row>
+     <row>I**S*******C**R</row>
+     <row>C**P*******I**A</row>
+     <row>I**E******PAZ**</row>
+     <row>A**T***********</row>
+     <row>***O*DEMOCRACIA</row>
+    </text>
+   </textGrid>
+   <clues>
+    <clue id="0">COMUNIDAD</clue>
+    <clue id="1">CULTURA</clue>
+    <clue id="2">FAMILIA</clue>
+    <clue id="3">RESPETO</clue>
+    <clue id="4">INCLUSION</clue>
+    <clue id="5">DERECHOS</clue>
+    <clue id="6">DEMOCRACIA</clue>
+    <clue id="7">PAZ</clue>
+    <clue id="8">EQUIDAD</clue>
+    <clue id="9">CONVIVENCIA</clue>
+    <clue id="10">JUSTICIA</clue>
+   </clues>
+  </activity>
+  <activity class="@text.Complete" name="TEXTO 1" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Calisto MT" size="18" />
+      <color background="0xFFFF33" />
+     </style>
+     <p>Lee el texto y completa el espacio con la palabra correcta.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Calisto MT" size="18" />
+      <color background="0x66FF66" />
+     </style>
+     <p>¡Bien hecho!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x66CCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCFFCC" border="true">
+     <size width="600" height="500" />
+    </window>
+   </settings>
+   <checkButton>Evaluación</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" size="11" bold="false" italic="false" tabWidth="12" />
+    <section>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF"> </text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" Alignment="1">
+      <cell width="250" height="250" image="valores.png" />
+     </p>
+     <p family="Arial" background="0xFFFFFF">
+      <text family="Arial" background="0xFFFFFF"> </text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" Alignment="1">
+      <text size="40" family="Baskerville Old Face">Los </text>
+      <target>valores</target>
+      <text size="40" family="Baskerville Old Face"> son principios que guían nuestras acciones y fomenten el respeto.</text>
+      <text size="50" family="Baskerville Old Face"> </text>
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.Complete" name="TEXTO 2" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Calisto MT" size="18" />
+      <color background="0x66FF66" />
+     </style>
+     <p>Lee el texto y completa el espacio con la palabra correcta.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Calisto MT" size="18" />
+      <color background="0xFFFF33" />
+     </style>
+     <p>¡Bien hecho!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0x99FFCC">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFCCCC" border="true">
+     <size width="600" height="500" />
+    </window>
+   </settings>
+   <checkButton>Evaluación</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" size="11" bold="false" italic="false" tabWidth="12" />
+    <section>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" Alignment="1">
+      <cell width="250" height="250" image="equidad.png" />
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" Alignment="1">
+      <text family="Baskerville Old Face" background="0xFFFFFF" size="50">La </text>
+      <target>equidad</target>
+      <text family="Baskerville Old Face" background="0xFFFFFF" size="50"> da a cada persona el apoyo que necesita</text>
+      <text family="Baskerville Old Face" background="0xFFFFFF" size="30">.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.Complete" name="TEXTO 3" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Calisto MT" size="18" />
+      <color background="0xFF9933" />
+     </style>
+     <p>Lee el texto y completa el espacio con la palabra correcta.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Calisto MT" size="18" />
+      <color background="0xFFCCCC" />
+     </style>
+     <p>¡Bien hecho!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFFFF99">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFCCCC" border="true">
+     <size width="600" height="500" />
+    </window>
+   </settings>
+   <checkButton>Evaluación</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" size="11" bold="false" italic="false" tabWidth="12" />
+    <section>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" Alignment="1">
+      <cell width="250" height="250" image="igualdad.png" />
+     </p>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" Alignment="1">
+      <text family="Baskerville Old Face" background="0xFFFFFF" size="40">La </text>
+      <target>igualdad</target>
+      <text family="Baskerville Old Face" background="0xFFFFFF" size="40"> dice que todas las personas tienen los mismos derechos  y oportunidades.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.Complete" name="TEXTO 4" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Calisto MT" size="18" />
+      <color background="0xFFCCCC" />
+     </style>
+     <p>Lee el texto y completa el espacio con la palabra correcta.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Calisto MT" size="18" />
+      <color background="0xFF9933" />
+     </style>
+     <p>¡Bien hecho!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xCCCCFF">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCCFFCC" border="true">
+     <size width="600" height="500" />
+    </window>
+   </settings>
+   <checkButton>Evaluación</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" size="11" bold="false" italic="false" tabWidth="12" />
+    <section>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" Alignment="1">
+      <cell width="250" height="250" image="respeto.png" />
+     </p>
+     <p family="Arial" background="0xFFFFFF" Alignment="1" />
+     <p family="Arial" background="0xFFFFFF" Alignment="1" />
+     <p family="Arial" background="0xFFFFFF" Alignment="1" />
+     <p family="Arial" background="0xFFFFFF" Alignment="1">
+      <text family="Baskerville Old Face" background="0xFFFFFF" size="40">El </text>
+      <target>respeto</target>
+      <text family="Baskerville Old Face" background="0xFFFFFF" size="40"> trata a todas las personas con amabilidad y aceptar sus diferencias.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@text.Complete" name="TEXTO 5" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style>
+      <font family="Calisto MT" size="18" />
+      <color background="0xCCFFFF" />
+     </style>
+     <p>Lee el texto y completa el espacio con la palabra correcta.</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Calisto MT" size="18" />
+      <color background="0xCCCCFF" />
+     </style>
+     <p>¡Bien hecho!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFF9999">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xCC99FF" border="true">
+     <size width="600" height="500" />
+    </window>
+   </settings>
+   <checkButton>Evaluación</checkButton>
+   <document>
+    <style name="targetError" base="target" foreground="0xFF0000" />
+    <style name="target" base="default" foreground="0x0000FF" target="true" />
+    <style name="default" family="Arial" background="0xFFFFFF" size="11" bold="false" italic="false" tabWidth="12" />
+    <section>
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" />
+     <p family="Arial" background="0xFFFFFF" Alignment="1">
+      <cell width="250" height="250" image="responsabilidad.png" />
+     </p>
+     <p family="Arial" background="0xFFFFFF" Alignment="1" />
+     <p family="Arial" background="0xFFFFFF" Alignment="1">
+      <text family="Baskerville Old Face" background="0xFFFFFF" size="40">La </text>
+      <target>responsabilidad</target>
+      <text family="Baskerville Old Face" background="0xFFFFFF" size="40"> cumple con nuestros deberes y asumir las consecuencias de nuestras acciones.</text>
+     </p>
+    </section>
+   </document>
+   <evaluator class="@ComplexEvaluator" />
+  </activity>
+  <activity class="@associations.SimpleAssociation" name="TIPOS DE INCLUSION" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <font family="Arial Black" size="20" />
+      <color background="0xFF9999" />
+     </style>
+     <p>RELACIONA EL OBJETO CON SU NOMBRE</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <font family="Arial Black" size="22" />
+      <color background="0xFF9999" />
+     </style>
+     <p>¡LO LOGRASTE!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFF9900">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFFFF99" border="true" />
+   </settings>
+   <cells rows="4" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="primary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell image="inclusion de discapacidades.jpg">
+     <style>
+      <font family="Arial Black" size="22" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="inclusion educativa.jpg">
+     <style>
+      <font family="Arial Black" size="22" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="inclusion laboral.jpg">
+     <style>
+      <font family="Arial Black" size="22" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+    <cell image="inclusion social.jpg">
+     <style>
+      <font family="Arial Black" size="22" />
+      <color background="0xFFFFFF" />
+     </style>
+    </cell>
+   </cells>
+   <cells rows="4" cols="1" cellWidth="200.0" cellHeight="200.0" border="true" id="secondary">
+    <style />
+    <shaper class="@Rectangular" cols="1" rows="4" />
+    <cell>
+     <style>
+      <font family="Arial Black" size="14" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Inclusión de discapacidades</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial Black" size="14" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Inclusión educativa</p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial Black" size="14" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Inclusión laboral </p>
+    </cell>
+    <cell>
+     <style>
+      <font family="Arial Black" size="14" />
+      <color background="0xFFFFFF" />
+     </style>
+     <p>Inclusión social</p>
+    </cell>
+   </cells>
+   <scramble times="31" primary="true" secondary="true" />
+   <layout position="AB" />
+  </activity>
+  <activity class="@textGrid.CrossWord" name="crucigrama" code="">
+   <description />
+   <messages>
+    <cell type="initial">
+     <style borderStroke="0.7" markerStroke="5.0">
+      <color background="0x00CCFF" />
+     </style>
+     <p>LEE EL CONCEPTO Y ESCRIBE LA PALABRA CORRECTA DONDE CORRESPONDA</p>
+    </cell>
+    <cell type="final">
+     <style>
+      <color background="0xCCFFCC" />
+     </style>
+     <p>¡BIEN HECHO!</p>
+    </cell>
+   </messages>
+   <settings margin="8" report="true" reportActions="false">
+    <container bgColor="0xFF9900">
+     <counters time="true" actions="true" score="true" />
+    </container>
+    <window bgColor="0xFF3333" border="true" />
+   </settings>
+   <textGrid rows="26" columns="18" cellWidth="20.0" cellHeight="20.0" border="true">
+    <style borderStroke="0.7" markerStroke="5.0">
+     <color foreground="0xFF3333" background="0xFFFFFF" inactive="0xCCCCCC" border="0xFFFFFF" />
+    </style>
+    <text>
+     <row>******D*******************</row>
+     <row>*J****E*******************</row>
+     <row>*U*J**R*********L*******N*</row>
+     <row>*D*U**E*********EJECUTIVO*</row>
+     <row>*I*S**C*********G*******R*</row>
+     <row>*C*T**H****C****I*******M*</row>
+     <row>DIVISIONDEPODERES*******A*</row>
+     <row>*A*C**S****N****L*********</row>
+     <row>*L*I**H****T****A*********</row>
+     <row>***A**U****R****T*********</row>
+     <row>******M****A****IGUALDAD**</row>
+     <row>******A****P****V*********</row>
+     <row>******N****E****O*********</row>
+     <row>******O****S**************</row>
+     <row>******S*DEMOCRACIA********</row>
+     <row>***********S**************</row>
+     <row>**************************</row>
+     <row>**************************</row>
+    </text>
+   </textGrid>
+   <cells rows="1" cols="3" cellWidth="200.0" cellHeight="60.0" border="true" id="acrossClues">
+    <style>
+     <color background="0xFF9900" />
+    </style>
+    <shaper class="@Rectangular" cols="3" rows="1" />
+    <cell id="15" item="1" />
+    <cell id="15" item="0" />
+    <cell id="14" item="1">
+     <p>Forma de gobierno en la que el poder pertenece al pueblo.</p>
+    </cell>
+    <cell id="14" item="1" />
+    <cell id="14" item="0" />
+    <cell id="13" item="2" />
+    <cell id="13" item="1" />
+    <cell id="13" item="0" />
+    <cell id="12" item="3" />
+    <cell id="12" item="2" />
+    <cell id="12" item="1" />
+    <cell id="12" item="0" />
+    <cell id="11" item="3" />
+    <cell id="11" item="2" />
+    <cell id="11" item="1" />
+    <cell id="11" item="0" />
+    <cell id="10" item="3" />
+    <cell id="10" item="2">
+     <p>Principio que reconoce la misma dignidad y derechos de todas las personas.</p>
+    </cell>
+    <cell id="10" item="1" />
+    <cell id="10" item="0" />
+    <cell id="9" item="4" />
+    <cell id="9" item="0" />
+    <cell id="9" item="3" />
+    <cell id="9" item="2" />
+    <cell id="9" item="1" />
+    <cell id="8" item="5" />
+    <cell id="8" item="1" />
+    <cell id="8" item="4" />
+    <cell id="8" item="3" />
+    <cell id="8" item="2" />
+    <cell id="8" item="0" />
+    <cell id="7" item="5" />
+    <cell id="7" item="1" />
+    <cell id="7" item="4" />
+    <cell id="7" item="3" />
+    <cell id="7" item="2" />
+    <cell id="7" item="0" />
+    <cell id="6" item="2" />
+    <cell id="6" item="1" />
+    <cell id="6" item="0">
+     <p>Principio que divide el poder en funciones ejecutiva, legislativa y judicial.</p>
+    </cell>
+    <cell id="5" item="6" />
+    <cell id="5" item="1" />
+    <cell id="5" item="5" />
+    <cell id="5" item="4" />
+    <cell id="5" item="3" />
+    <cell id="5" item="2" />
+    <cell id="5" item="0" />
+    <cell id="4" item="5" />
+    <cell id="4" item="1" />
+    <cell id="4" item="4" />
+    <cell id="4" item="3" />
+    <cell id="4" item="2" />
+    <cell id="4" item="0" />
+    <cell id="3" item="4" />
+    <cell id="3" item="1" />
+    <cell id="3" item="3">
+     <p>Poder encargado de ejecutar y hacer cumplir las leyes.</p>
+    </cell>
+    <cell id="3" item="2" />
+    <cell id="3" item="0" />
+    <cell id="1" item="2" />
+    <cell id="1" item="1" />
+    <cell id="1" item="0" />
+    <cell id="0" item="1" />
+    <cell id="0" item="0" />
+    <cell id="2" item="5" />
+    <cell id="2" item="1" />
+    <cell id="2" item="4" />
+    <cell id="2" item="3" />
+    <cell id="2" item="2" />
+    <cell id="2" item="0" />
+    <cell id="16" item="0" />
+    <cell id="0" />
+    <cell id="1" />
+    <cell id="2" />
+   </cells>
+   <cells rows="1" cols="3" cellWidth="200.0" cellHeight="60.0" border="true" id="downClues">
+    <style>
+     <color background="0xFF9900" />
+    </style>
+    <cell id="23" item="2" />
+    <cell id="23" item="1" />
+    <cell id="22" item="2" />
+    <cell id="22" item="1" />
+    <cell id="25" item="0" />
+    <cell id="24" item="1" />
+    <cell id="24" item="0">
+     <p>Regla que debe cumplirse para mantener la convivencia.</p>
+    </cell>
+    <cell id="23" item="0" />
+    <cell id="23" item="0" />
+    <cell id="22" item="0" />
+    <cell id="22" item="0" />
+    <cell id="21" item="2" />
+    <cell id="21" item="1" />
+    <cell id="21" item="0" />
+    <cell id="20" item="2" />
+    <cell id="20" item="1" />
+    <cell id="20" item="0" />
+    <cell id="19" item="2" />
+    <cell id="19" item="1" />
+    <cell id="19" item="0" />
+    <cell id="18" item="2" />
+    <cell id="18" item="1" />
+    <cell id="18" item="0" />
+    <cell id="16" item="0">
+     <p>Poder encargado de crear y aprobar las leyes.</p>
+    </cell>
+    <cell id="16" item="1" />
+    <cell id="13" item="2" />
+    <cell id="13" item="1" />
+    <cell id="8" item="2" />
+    <cell id="8" item="1" />
+    <cell id="9" item="2" />
+    <cell id="9" item="1" />
+    <cell id="17" item="3" />
+    <cell id="17" item="1" />
+    <cell id="17" item="0" />
+    <cell id="17" item="2" />
+    <cell id="7" item="1" />
+    <cell id="15" item="2" />
+    <cell id="15" item="1" />
+    <cell id="15" item="0" />
+    <cell id="14" item="2" />
+    <cell id="14" item="1" />
+    <cell id="14" item="0" />
+    <cell id="13" item="0" />
+    <cell id="13" item="0" />
+    <cell id="12" item="2" />
+    <cell id="12" item="1" />
+    <cell id="12" item="0" />
+    <cell id="11" item="1" />
+    <cell id="11" item="0">
+     <p>Mecanismos que limitan el poder de una autoridad y evitan abusos.</p>
+    </cell>
+    <cell id="10" item="2" />
+    <cell id="10" item="1" />
+    <cell id="10" item="0" />
+    <cell id="7" item="0" />
+    <cell id="7" item="0" />
+    <cell id="6" item="0">
+     <p>Derechos que todas las personas tienen por el simple hecho de serlo.</p>
+    </cell>
+    <cell id="6" item="0" />
+    <cell id="5" item="1" />
+    <cell id="5" item="0" />
+    <cell id="4" item="1" />
+    <cell id="4" item="0" />
+    <cell id="3" item="0">
+     <p>Principio que busca dar a cada persona lo que le corresponde y aplicar las leyes.</p>
+    </cell>
+    <cell id="3" item="0" />
+    <cell id="2" item="1" />
+    <cell id="2" item="0" />
+    <cell id="1" item="1" />
+    <cell id="1" item="0">
+     <p>Poder del Estado que administra la justicia.</p>
+    </cell>
+    <cell id="0" item="1" />
+    <cell id="0" item="0" />
+    <cell id="8" item="0" />
+    <cell id="8" item="0" />
+    <cell id="9" item="0" />
+    <cell id="9" item="0" />
+    <cell id="16" item="0" />
+    <cell id="16" item="0" />
+    <cell id="0" />
+    <cell id="1" />
+    <cell id="2" />
+   </cells>
+   <layout position="AB" />
+  </activity>
+ </activities>
+ <mediaBag>
+  <media name="cau 1.jpg" file="cau_1.jpg" />
+  <media name="cau 2.jpg" file="cau_2.jpg" />
+  <media name="cau 3.jpg" file="cau_3.jpg" />
+  <media name="cau 4.jpg" file="cau_4.jpg" />
+  <media name="conse 1.jpg" file="conse_1.jpg" />
+  <media name="conse 2.jpg" file="conse_2.jpg" />
+  <media name="conse 3.jpg" file="conse_3.jpg" />
+  <media name="conse 4.jpg" file="conse_4.jpg" />
+  <media name="inclusion de discapacidades.jpg" file="inclusion_de_discapacidades.jpg" />
+  <media name="inclusion educativa.jpg" file="inclusion_educativa.jpg" />
+  <media name="inclusion laboral.jpg" file="inclusion_laboral.jpg" />
+  <media name="inclusion social.jpg" file="inclusion_social.jpg" />
+  <media name="JUEGOS-resized.jpg" file="juegos-resized.jpg" />
+  <media name="ROOMPECABEZAAA-resized.jpg" file="roompecabezaaa-resized.jpg" />
+  <media name="equidad.png" file="equidad.png" />
+  <media name="igualdad.png" file="igualdad.png" />
+  <media name="respeto.png" file="respeto.png" />
+  <media name="responsabilidad.png" file="responsabilidad.png" />
+  <media name="valores.png" file="valores.png" />
+ </mediaBag>
+</JClicProject>
+
